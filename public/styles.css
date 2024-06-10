@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+}
+.center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gap-buttons-1{
+    gap:20px
+}
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+.body{
+    flex:1
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+.buttons{
+    position: relative;
+    top:270px;
+    z-index:15
+}
+.background1{
+    height: 440px;
+    min-width: 100%;
+    background-image: url('https://cdn.concreteplayground.com/content/uploads/2015/05/indu-indian-restaurant-supplied-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    position: fixed;
+}
+/*backdrop-filter: blur(8px);*/
+
+.mainDiv{
+    height: 2000px;
+    width: 100%;
+    background-color: aquamarine;
+    z-index: 15;
+    position: relative;
+    top: 400px;
+}
+.content{
+    position: relative;
+    height: 100%;
+    padding-top: 0px; /* Space enough for the top and middle divs */
+}
+
+.btnBackground{
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    position: fixed;
+    backdrop-filter: blur(4px)
+}
+@media (min-width: 1920px){
+    .background1{
+        height: 980px;
+    }
+    .mainDiv{
+        top: 880px;
+    }
+    .buttons{
+        top:770px;
+    }
+    .gap-buttons-1{
+        gap:70px
+    }
+}
+@media (min-width: 2560px){
+    .background1{
+        height: 1200px;
+    }
+    .mainDiv{
+        top: 1080px;
+    }
+    .buttons{
+        top:870px;
+    }
+    .gap-buttons-1{
+        gap:70px
+    }
+}
