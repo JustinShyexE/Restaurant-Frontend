@@ -3,7 +3,16 @@ import { useState } from "react";
 import Header from "../Components/Header";
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
+import Socials from "../Components/Socials";
+import Banner from "../Components/Banner";
+import Food from "../Components/Food";
+import Food2 from "../Components/Food2";
+import Food3 from "../Components/Food3.jsx"
+import Introduction from "../Components/Introduction.jsx";
+import logo from "../images/vintage.png"
+import CarouselFood from "../Components/CarouselFood.jsx"
 //import useDetectScroll from '@smakss/react-scroll-direction';
+
 
 function Home(){
   //const { scrollDir, scrollPosition } = useDetectScroll();
@@ -16,6 +25,7 @@ function Home(){
     setHover(false)
     console.log(hover)
   }
+  
     return(<div className="mainBody">
         <div className="body">
         <Header />
@@ -23,19 +33,26 @@ function Home(){
             <div className={hover? "btnBackground":null}>
             </div>
          </div>
-         <img id="logo" className="logo" alt="" src="https://image.similarpng.com/very-thumbnail/2021/07/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png" />
+         <img id="logo" className="logo" alt="" src={logo} />
          <div className="content">
           <div>
              <div  className="buttons center-center gap-buttons-1">
-               <Button over={setTrue} out={setFalse} />
+               <Button link="/booking" over={setTrue} out={setFalse} />
              </div>
            </div>
           <div id="triggerDiv" className="mainDiv">
-
-            
+              <div className="mainContent">
+                 <Introduction />
+                 <Food />
+                 <Food2 />
+                 <Banner />
+                 <Food3 />
+                 <Socials />
+                 <CarouselFood />
+              </div>
+              <Footer />
           </div>
          </div>
-         <Footer />
         </div>
     </div>)
 }

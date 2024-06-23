@@ -6,7 +6,7 @@
 }
 .type--B{
     --line_color : white;
-    --back_color : grey
+    --back_color : #F6E6CB;
   }
   .button{
     position : relative ;

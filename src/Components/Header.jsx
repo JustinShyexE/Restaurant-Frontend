@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import {Twirl as Hamburger} from 'hamburger-react'
-
+import logo from "../images/vintage.png"
 
 function Header(){
     const [under, setUnder] = useState(false)
@@ -13,6 +13,9 @@ function Header(){
         }else{
             setUnder(true)
         }
+    }
+    function setOff(){
+        setUnder(false)
     }
 /**HeaderOn HeaderOff =  under header animated bar   header-off header-on= header animation */
 window.addEventListener("DOMContentLoaded", function() {
@@ -39,19 +42,18 @@ window.addEventListener('scroll', () => {
         setUnder(false)
     }
   });
-  
     return(<div >
      <div id="Header" className="center-center">
-         <img className="headerImg pad-left-header-1" alt="" src="https://image.similarpng.com/very-thumbnail/2021/07/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png"/>
+         <img className="headerImg pad-left-header-1" alt="" src={logo} />
          <div style={{overflow: "hidden"}} className="pad-right-header-1">
             <Hamburger color="black" size={28} direction="left"  toggled={under} toggle={handleClick} />
          </div>
      </div>
-     <div id="underHeader" className={under? "HeaderOn center-center" : "HeaderOff center-center" }>
+     <div onMouseLeave={setOff} id="underHeader" className={under? "HeaderOn center-center" : "HeaderOff center-center" }>
         <div className="underHeaderDiv center-center">
-            <a className="btn" href="/">Menu</a>
-            <a className="btn" href="/">Contact</a>
-            <a className="btn" href="/">About us</a>
+            <a className="btn font-Playfair" href="/">Menu</a>
+            <a className="btn font-Playfair" href="/">Contact</a>
+            <a className="btn font-Playfair" href="/">About us</a>
         </div>
      </div>
     </div>

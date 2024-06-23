@@ -5,9 +5,10 @@
     z-index: 20;
     position: fixed;
     justify-content: space-between;
-    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
-    background-color: grey;
-    /* backdrop-filter: blur(4px);*/
+    background-color: #A0937D;
+    backdrop-filter: blur(4px);
+    /* ;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");*/
 }
 hamburger{
   margin-left: auto
@@ -26,7 +27,7 @@ hamburger{
 .underHeaderDiv{
    height: 100%;
    min-width: 70px;
-   background-color: blue;
+   background-color: #A0937D;
    flex-direction: column;
    gap: 30px;
    overflow: hidden;
@@ -39,7 +40,6 @@ hamburger{
 .logo{
   width: 60px;
   height: 60px;
-  background-color: aliceblue;
   z-index: 20;
   position: fixed;
   left: 5px;

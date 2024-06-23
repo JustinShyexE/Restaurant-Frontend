@@ -1,14 +1,14 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home"
-import FooterDel from "./pages/FooterDel";
+import Bookings from "./pages/Bookings"
 
 function App(){
      return(<div>
          <BrowserRouter>
             <Routes>
                 <Route index element={<Home />} />
-                <Route path="/footer" element={<FooterDel />} /> 
+                <Route path="/booking" element={<Bookings />} /> 
             </Routes>
          </BrowserRouter>
      </div>)
