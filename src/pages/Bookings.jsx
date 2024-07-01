@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Button from "../Components/Button";
+import ButtonMobile from "../Components/ButtonMobile";
 
 function Bookings(){
    let [date, setDate]=useState(new Date().toISOString().split("T")[0])
@@ -32,6 +33,7 @@ function Bookings(){
              <input placeholder="Additional details" className="input bookingText font-Garamod" type="text" />
              <div className="bookingButton">
                 <Button link="/booking" over={setTrue} out={setFalse} />
+                <ButtonMobile />
              </div>
              </div>
          </div>

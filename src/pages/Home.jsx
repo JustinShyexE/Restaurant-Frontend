@@ -11,6 +11,7 @@ import Food3 from "../Components/Food3.jsx"
 import Introduction from "../Components/Introduction.jsx";
 import logo from "../images/vintage.png"
 import CarouselFood from "../Components/CarouselFood.jsx"
+import ButtonMobile from "../Components/ButtonMobile.jsx"
 //import useDetectScroll from '@smakss/react-scroll-direction';
 
 
@@ -38,6 +39,7 @@ function Home(){
           <div>
              <div  className="buttons center-center gap-buttons-1">
                <Button link="/booking" over={setTrue} out={setFalse} />
+               <ButtonMobile />
              </div>
            </div>
           <div id="triggerDiv" className="mainDiv">
